@@ -4,12 +4,16 @@
         <title>input control</title>
     </head>
     <body>
-       <form action = "connect.php" method = "Post">
-        <div>
+        
+    
+       <form action = "process.php" method = "Post">
+        
         <label for="username" class="form-label"></label>
-          <input type = "text" name = "name" />
+           firstname: <input type = "text" name = "firstname" />
           </div>
-         Age: <input type = "text" name = "age" />
+           secondname:<input type = "text" name = "secondname" />
+         email: <input type="text" name = "email">
+          telephone:<input type="number" name ="telephone">
          <button type = "submit">SUMBIT</button> 
 </form>
     </body>
