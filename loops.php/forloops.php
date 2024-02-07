@@ -6,6 +6,7 @@
     <title>loops</title>
 </head>
 <body>
+    <form action=""></form>
     <?php
     $a =0;
     $b =0;
