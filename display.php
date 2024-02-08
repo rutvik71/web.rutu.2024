@@ -19,16 +19,18 @@ if(mysqli_num_rows($result)>0 ){
         
         <div class="cpl-lg-3">
         <div class="card" style="width: 18rem;">
-        <u class="list-group list-group-flush">
+        <ul class="list-group list-group-flush">
           <li class="list-group-item"><?php  echo $row['firstname'];?></li>
-          <li class="list-group-item">Item 2</li>
-          <li class="list-group-item">Item 3</li>
+          <li class="list-group-item"><?php  echo $row['secondname'];?></li>
+          <li class="list-group-item"><?php  echo $row['email'];?></li>
+          <li class="list-group-item"><?php  echo $row['telephone'];?></li>
         </ul>
       </div>
         </div>
+        <a href="updateform.php">updateform</a>
       
-echo "<p> firstname" . $row['firstname'] ."</p>";
-
+    
+       
 <?php
     }
 }
