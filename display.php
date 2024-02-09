@@ -17,16 +17,16 @@ $result = mysqli_query($connect,$query);
 if(mysqli_num_rows($result)>0 ){
     while($row = mysqli_fetch_assoc($result)){?>
         
-        <div class="cpl-lg-3">
-        <div class="card" style="width: 18rem;">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><?php  echo $row['firstname'];?></li>
-          <li class="list-group-item"><?php  echo $row['secondname'];?></li>
-          <li class="list-group-item"><?php  echo $row['email'];?></li>
-          <li class="list-group-item"><?php  echo $row['telephone'];?></li>
-        </ul>
-      </div>
-        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem;">
+            
+              <?php  echo $row['firstname'];?>
+              <?php  echo $row['secondname'];?>
+              <?php  echo $row['email'];?>
+              <?php  echo $row['telephone'];?>
+            
+         </div>
+       </div>
         <a href="updateform.php">updateform</a>
       
     
